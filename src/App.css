@@ -9,6 +9,7 @@
 
 .ytContainer {
   width: 90%;
+  max-width: 1200px;
   border-radius: 6px;
   overflow: hidden;
 }
