@@ -10,7 +10,7 @@ function App() {
     showMuteBtn: true,
     fullScreen: true,
     repeat: true,
-    autoStart: true,
+    autoplay: true,
     start: 0,
     end: 0
   });
@@ -32,7 +32,7 @@ function App() {
     const showMuteBtn = urlParams.get('showMuteBtn') === 'true' || true;
     const fullScreen = urlParams.get('fullScreen') === 'true' || true;
     const repeat = urlParams.get('repeat') === 'true' || true;
-    const autoStart = urlParams.get('autoStart') === 'true' || true;
+    const autoplay = urlParams.get('autoplay') === 'true' || true;
     const start = urlParams.get('start') ? parseInt(urlParams.get('start')) : 0;
     const end = urlParams.get('end') ? parseInt(urlParams.get('end')) : 0;
 
@@ -47,7 +47,7 @@ function App() {
       showMuteBtn,
       fullScreen,
       repeat,
-      autoStart,
+      autoplay,
       start,
       end
     });
@@ -79,7 +79,7 @@ function App() {
               <li><strong>showMuteBtn</strong>: Exibe o botão de Mudo (opcional, padrão: true)</li>
               <li><strong>fullScreen</strong>: Permite exibir o vídeo em tela cheia (opcional, padrão: true)</li>
               <li><strong>repeat</strong>: Habilita o loop do vídeo (opcional, padrão: true)</li>
-              <li><strong>autoStart</strong>: Inicia automaticamente o vídeo (opcional, padrão: true)</li>
+              <li><strong>autoplay</strong>: Inicia automaticamente o vídeo (opcional, padrão: true)</li>
               <li><strong>start</strong>: Tempo inicial em segundos para começar o vídeo (opcional)</li>
               <li><strong>end</strong>: Tempo final em segundos para terminar o vídeo (opcional)</li>
             </ul>
@@ -102,7 +102,7 @@ function App() {
             showMuteBtn={params.showMuteBtn}
             fullScreen={params.fullScreen}
             repeat={params.repeat}
-            autoStart={params.autoStart}
+            autoplay={params.autoplay}
             start={params.start}
             end={params.end}
             playerId="unique-player-id"  // Adicionando um ID único para o player
