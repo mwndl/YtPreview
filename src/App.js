@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import YouTubeEmbed from './components/YouTubeVideo/index';
+import YouTubeEmbed from 'yt-custom-player';
 import './App.css';
 
 function App() {
