@@ -7,15 +7,15 @@
   background-color: #000; /* Cor de fundo opcional */
 }
 
+.ytContainer {
+  width: 90%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
 .YouTubeEmbed {
   width: 80%;
   height: 80%;
-}
-
-.ytContainer {
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
 }
 
 .error-container {
