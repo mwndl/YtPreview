@@ -102,7 +102,6 @@ const YouTubeEmbed = ({
             }
             const duration = event.target.getDuration();
             setVideoDuration(duration);
-
             if (autoplay && muted) {
               setIconType(2);
             } else {
@@ -129,9 +128,7 @@ const YouTubeEmbed = ({
               }, 750);
             }
 
-            const duration = (end || videoDuration) - start;
-
-            if (event.target.getCurrentTime() >= duration) {
+            if (end > 0 && event.target.getCurrentTime() >= end) {
               event.target.pauseVideo();
               event.target.seekTo(start);
             }
@@ -141,11 +138,8 @@ const YouTubeEmbed = ({
 
       const interval = setInterval(() => {
         if (playerRef.current) {
-
-          
           const currentTime = playerRef.current.getCurrentTime();
           const duration = (end || videoDuration) - start;
-
           if (duration > 0) {
             const adjustedCurrentTime = currentTime - start;
             if (adjustedCurrentTime >= 0) {
