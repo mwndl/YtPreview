@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100vw;  /* Ocupa toda a largura da tela */
+  background-color: #000; /* Cor de fundo opcional */
 }
 
-.App-link {
-  color: #61dafb;
+.YouTubeEmbed {
+  width: 80%;
+  height: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ytContainer {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #721c24;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.error-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.error-example {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  overflow-x: auto;
+}
+
+.error-instruction {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+ul, h3 {
+  text-align: start;
 }
