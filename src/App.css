@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Temas */
 body.light-theme {
   background-color: #ffffff;
@@ -111,4 +115,39 @@ body.dark-theme .search-bar:focus {
 
 ul {
   text-align: start;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .ytContainer {
+    width: 95%;
+  }
+
+  .search-container {
+    width: 95%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .search-button {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .search-button {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
 }
