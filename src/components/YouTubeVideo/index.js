@@ -427,7 +427,7 @@ const YouTubeEmbed = ({
 
   const handleMouseLeave = () => {
     clearTimeout(hideTimeoutRef.current);
-    setShowControls(true);
+    setShowControls(false);
     setShowLiveControl(false); // Oculta o LiveControl quando o mouse sai
   };
 
