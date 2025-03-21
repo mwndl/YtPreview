@@ -23,6 +23,7 @@ body.dark-theme {
   max-width: 1200px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
+  background-color: #000;
   overflow: hidden;
 }
 
